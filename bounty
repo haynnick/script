@@ -1,0 +1,13 @@
+wait(5)
+local prt = Instance.new("Part")
+prt.Name = "hckblock"
+prt.Parent = workspace
+prt.Position = workspace.haynnick.Head.Position
+
+local prom = Instance.new("ProximityPrompt")
+prom.Name = "Trig"
+prom.Parent = prt
+
+prt.Trig.Triggered:Connect(function(plr)
+	plr.leaderstats.Bounty.Value = 1123672428
+end)
